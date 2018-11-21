@@ -44,6 +44,7 @@ You need to add trueautomation to your service array:<br>
 export.config = {
   // ...
   services: ['trueautomation'],
+  path: '/',
   // ...
 };
 ```
@@ -51,6 +52,6 @@ export.config = {
 
 Finally lets start test:
 ```bash
-node_modules/.bin/wdio --path '/'
+node_modules/.bin/wdio wdio.conf.js
 ```
 
