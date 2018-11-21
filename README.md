@@ -12,11 +12,17 @@ npm init -y
 npm install wdio-trueautomation-service --save-dev
 ```
 ```bash
-npm install trueautomation-helper --save
+npm install trueautomation-helper --save-dev
 ```
 ```bash
 npm install webdriverio --save-dev
 ```
+
+For trueautomation init: 
+```bash
+trueautomation init
+```
+For wdio config:
 ```bash
 node_modules/.bin/wdio
 ```
@@ -32,17 +38,14 @@ node_modules/.bin/wdio
 ? What is the base url? http://localhost: "Enter"<br>
 
 
-You need to add trueautomation to your service array:
-// wdio.conf.js
+You need to add trueautomation to your service array:<br>
+// wdio.conf.js<br>
+```code
 export.config = {
   // ...
   services: ['trueautomation'],
   // ...
 };
-
-Lets init trueautomation
-```bash
-trueautomation init
 ```
 
 
